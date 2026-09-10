@@ -320,3 +320,33 @@ a:focus-visible, button:focus-visible {
   outline: 2px solid var(--gold);
   outline-offset: 2px;
 }
+.compliance-layout {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.compliance-images {
+  flex: 0 0 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.compliance-images img {
+  width: 100%;
+  border-radius: var(--radius);
+  display: block;
+}
+
+.compliance-layout .area-grid {
+  flex: 1;
+}
+
+@media (max-width: 900px) {
+  .compliance-layout { flex-direction: column; }
+  .compliance-images { flex: none; width: 100%; }
+}
+.area-index .section-inner {
+  max-width: 1100px;
+}
