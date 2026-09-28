@@ -307,9 +307,13 @@ a { color: inherit; }
 }
 
 .video-grid .video-frame {
-  flex: 0 1 calc(33.333% - 11px);
+  flex: 0 1 calc(50% - 8px);
   padding-top: 0;
   aspect-ratio: 16 / 9;
+}
+
+#instruction .section-inner {
+  max-width: 1100px;
 }
 
 /* Footer */
